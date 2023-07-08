@@ -24,7 +24,7 @@ const TodoItem = (props) => {
       <div className="btns">
         <AiFillEdit onClick={() => changeFocus()} />
         {item.completed === false && <IoCheckmarkDoneSharp />}
-
+        {/* <IoCheckmarkDoneSharp /> */}
         <IoClose onClick={() => removeTodo(item.id)} />
       </div>
       {item.completed && <span className="completed">done</span>}
